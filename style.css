@@ -71,6 +71,7 @@ header p{
 .results{
     max-width: 768px;
     margin: 0 auto;
+    overflow-x:hidden;
 }
 
 .result{
@@ -90,18 +91,26 @@ header p{
     color: #616161;
     font-size: 28px;
     margin-bottom: 16px;
+    padding: 9px;
 }
 
 .result p{
     color: #313131;
     font-size: 18px;
     margin-bottom: 16px;
+    padding: 5px;
+
 }
 
 .result a{
     display: inline-block;
     padding: 12px;
-    width: 100%;
+    width: 90%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
     background-color: #5c6bc0;
     color: #fff;
     text-decoration: none;
@@ -115,24 +124,8 @@ header p{
     background-color: #3949ab;
 }
 
-@media screen and (max-width: 380px) {
-    header {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    img {
-        width: 100%;
-        max-width: none;
-    }
-
-    .search-box input {
-        width: 100%;
-    }
-
-    .results {
-        justify-content: center;
-        align-items: center;
+@media(max-width:430px){
+    .result{
+        padding:  10px 0px ;
     }
 }
