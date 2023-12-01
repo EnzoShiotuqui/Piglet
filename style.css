@@ -34,6 +34,10 @@ h1{
     margin-bottom: 16px;
 }
 
+h4{
+    color: #616161;
+}
+
 header p{
     color: #616161;
     font-weight: bold;
